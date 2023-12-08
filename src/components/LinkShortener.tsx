@@ -3,7 +3,8 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
 
 import "./LinkShortener.scss";
-import "../assets/ApiKey"
+
+const apiKey = "Sk4sG7QR2VIQpsIBJApfnr65BJwrJOoSIoXW2OksZTwutHpAi9t7vIivcQ1p";
 
 // API doesnt work bc security whatevert
 export function LinkResult({
@@ -29,7 +30,7 @@ export function LinkResult({
                 <div className="custom-loader"></div>          
             ) : (
                 <a href={ shortLink } className="tiny-url" target="_blank">{ shortLink }</a>
-            )};
+            )}
             </div>
             <CopyToClipboard text={shortLink}>
               <button className="action-button copy-link">Copy Link</button>
