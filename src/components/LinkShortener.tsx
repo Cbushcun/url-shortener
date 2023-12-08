@@ -3,8 +3,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
 
 import "./LinkShortener.scss";
-
-const apiKey = "Sk4sG7QR2VIQpsIBJApfnr65BJwrJOoSIoXW2OksZTwutHpAi9t7vIivcQ1p";
+import "../assets/ApiKey"
 
 // API doesnt work bc security whatevert
 export function LinkResult({
